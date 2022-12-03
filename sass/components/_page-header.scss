@@ -1,0 +1,42 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.page-header__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.page-header__email,
+.page-header__tel {
+  display: inline-flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $second-color;
+  transition: color 250ms $transition-function;
+
+  &:hover,
+  &:focus {
+    color: $third-color;
+  }
+
+  &:hover .page-header__icon,
+  &:focus .page-header__icon {
+    fill: $third-color;
+  }
+}
+
+.page-header__icon {
+  align-self: center;
+  margin-right: 10px;
+  fill: currentColor;
+}

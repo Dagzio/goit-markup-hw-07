@@ -1,0 +1,23 @@
+.web,
+.page-header__logo,
+.page-footer__logo {
+  font-family: $second-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.web {
+  color: $third-color;
+}
+
+.page-header__logo {
+  color: #000000;
+  margin-right: 93px;
+}
+
+.page-footer__logo {
+  margin-bottom: 20px;
+  color: $white-color;
+}

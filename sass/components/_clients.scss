@@ -1,0 +1,37 @@
+.clients__title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $main-color;
+  margin-bottom: 50px;
+}
+
+.clients__list,
+.clients__link {
+  display: flex;
+}
+
+.clients__list {
+  gap: $margin-item;
+}
+
+.clients__link {
+  width: 170px;
+  height: 92px;
+  flex-basis: calc((100% - 150px) / 6);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+  fill: currentColor;
+  transition: fill 250ms $transition-function,
+    border-color 250ms $transition-function;
+
+  &:hover,
+  &:focus {
+    border-color: $third-color;
+    fill: $third-color;
+  }
+}
